@@ -1,3 +1,5 @@
-<p>
-  joke-list works!
-</p>
+<div class="card card-block"
+  *ngFor="let joke of jokes; let i = index">
+  <h4 class="card-title">{{i+1}}. {{joke.setup}}</h4>
+  <p class="card-text">{{joke.punchline}}</p>
+</div>
